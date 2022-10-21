@@ -32,7 +32,7 @@ setInterval(displayTime, 1000);
 
 // });
 
-var input = document.querySelector("description.row");
+var input = document.querySelector("description");
 var saveBtn = document.querySelector("saveBtn");
 
 saveBtn.addEventListener("click", function(event) {
