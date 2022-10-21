@@ -1,8 +1,14 @@
 var timeDisplayEl = $('#time-date');
+var row = $('row');
+var present = $('present');
 
 function displayTime() {
     var rightNow = moment().format('hh:mm:ss a [on] MMM DD, YYYY');
     timeDisplayEl.text(rightNow);
+
+    if(row === rightNow){
+      document.bgColor = present;
+    }
 }
 
 setInterval(displayTime, 1000);
